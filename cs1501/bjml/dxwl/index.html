@@ -1,0 +1,298 @@
+<!------------------------
+http://get.pianpianweb.com/cs1501/bjml/dxwl
+------------------------->
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="utf-8" />
+<meta name="description" content="计科1501班学生名单"/>
+<meta name="keywords" content="计科1501,学生名单"/>
+<link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon"> 
+<title>计科1501班学生名录</title>
+<style>
+body {margin:0; text-align:center;}
+h1 {/*margin-top:10px;*/ display:inline-block;}
+.qrc {display:inline-block; margin:auto auto 2px 7px;}
+ .qrc-des {margin-left:20px; font-size:0.8em; color:blue;}
+#article {text-align:left; display:none;}
+.profile {margin:10px; display:inline-block; text-align:center;}
+.profile span {font-size:0.9em;}
+.color {color:red;} /*学号的特别颜色*/
+.light {background:#ccc;}
+.gray {color:#666;}
+#forbidden p {text-align:left; margin-top:5px;}
+</style>
+</head>
+<body>
+<div id="content">
+<div id="header">
+  <h1>计科1501班级学生名录 (物理课)</h1><hr/>
+</div>
+<div id="security">
+  <form>
+    <span>请输入密码:</span>
+    <input id="pwd" type="password" value=""/>
+    <input id="btn" type="button" value="验证:-)" onclick="init()"/>
+    <br/><span id="setNum" style="visibility:hidden;">0</span><span id="Hellotxt"></span>
+  </form>
+</div>
+<div id="article">
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">01</span><br/><span>操 敏</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">02</span><br/><span>陈 亚</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">03</span><br/><span>楚康佳</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">04</span><br/><span>储志恒</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">05</span><br/><span>房 政</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">06</span><br/><span>付海鹏</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">07</span><br/><span>付媛媛</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">08</span><br/><span>高树雅</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">09</span><br/><span>古 月</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">10</span><br/><span>郭梓梁</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">11</span><br/><span>季 惟</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">12</span><br/><span>贾凤娇</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">13</span><br/><span>李 聪</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">14</span><br/><span>李桂林</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">15</span><br/><span>李明阳</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">16</span><br/><span>李瑞鹏</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">17</span><br/><span>李 睿</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">18</span><br/><span>林子杨</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">19</span><br/><span>林 妍</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">20</span><br/><span>刘超智</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">21</span><br/><span>刘丽玉</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">22</span><br/><span>刘 璐</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src="" onclick="setImg(23,'231')" onmouseout="setImg(23,'23')" title="点击有惊喜！"></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">23</span><br/><span>路智朋</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">24</span><br/><span>欧 颖</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">25</span><br/><span>秦 凯</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">26</span><br/><span>屈 直</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">27</span><br/><span>宋静雅</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">28</span><br/><span>王吉杨</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src="" onmouseover="setImg(29,'291')" onmouseout="setImg(29,'29')" title="移动至此有惊喜！"></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">29</span><br/><span>王志萍</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">30</span><br/><span>魏文璐</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">31</span><br/><span>吴燕楠</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">32</span><br/><span>徐泽友</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">33</span><br/><span>张丛丛</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">34</span><br/><span>张 峰</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">35</span><br/><span>张 宇</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">36</span><br/><span>张裕芃</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">37</span><br/><span>张云霞</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">38</span><br/><span>赵寒星</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">39</span><br/><span>周柏健</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">40</span><br/><span>周 迪</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray">022101501</span><span class="color">41</span><br/><span>周艳虹</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray"><!--022101401--></span><span class="color"><!--18--></span><br/><span>童言</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray"></span><span class="color"></span><br/><span>唐派</span></div>
+  </div>
+  <div class="profile">
+    <div class="img"><img width="117px" height="166px" src=""></div>
+    <div class="description"><span class="gray"></span><span class="color"></span><br/><span>钟建晗</span></div>
+  </div>
+  
+  <div class="profile">
+    <div class="qrc"><img class="qrc" width="100px" src="./pics/qr.png"/></div>
+    <div class="qrc-des"><span>扫描二维码</span><br/><span>看全彩版式</span></div>
+  </div>
+  
+</div>
+<div id="footer">
+  <hr class="light"/>
+  <div class="copy">
+    <img width="32px" src="./class_favicon.png"/>
+    <p style="margin:1px auto 20px; font-size:0.9em; color:#111;">计科1501班级学生名录 &copy;  2016 内部资料 | Created by <i>Pincury Zeazje</i> 2016-3-15 季</p>
+  </div>
+</div>
+</div>
+<div id="forbidden" style="display:none;">
+<h1 style="text-align:center;">HTTP 403 Forbidden</h1>
+<br/>
+<p>You don't have the permisson to acess this webpage, unless make sure you have the correct password then can you refresh this page and try again.</p>
+<hr/>
+<p><i>Powered by Github and Sourier. TUTE CSEngineering Class1501 2016 All Rights Reserved.</i></p>
+</div>
+<script>
+//global define
+  var setWord = "cs1501";
+
+  var img = document.getElementsByTagName('img');
+  //alert(img.length);
+  for (i=1;i<45;i++){
+    img[i-1].src="./pics/" + i + ".png";
+  }
+ function setImg(num,src){
+  img[parseInt(num)-1].src="./pics/" + src + ".png";
+ }
+
+function Forbid(){
+	var hidden = document.getElementById('content');
+	var display = document.getElementById('forbidden');
+	hidden.style.display = "none";
+	display.style.display = "block";
+}
+
+  function init(){
+    var pwd = document.getElementById('pwd').value;
+    var oBtn = document.getElementById('btn');
+    var Hellotxt = document.getElementById('Hellotxt');
+    var hidden = document.getElementById('security');
+    var show = document.getElementById('article');
+    var setNum = document.getElementById('setNum');
+    var Num;
+    Num = parseInt(setNum.innerHTML) + 1;
+    setNum.innerHTML = Num;
+    if (pwd == setWord){
+      hidden.style.display = "none";
+      show.style.display = "block";
+    }
+    if (pwd != setWord && Num < 2){
+      oBtn.value = "重试 :-(";
+      Hellotxt.innerHTML = "是不是哪里输错了，重新尝试一下吧";
+    }
+    
+    if (Num == 2){
+        Hellotxt.innerHTML = "请认真一点，未经允许偷看照片可不合适哟~";
+      }
+    else if (Num == 3){
+        Hellotxt.innerHTML = "你确定你有密码吗，私自查看不礼勿视！再错就关闭咯！";
+      }
+    else if (Num == 4 && pwd != setWord){
+        /*
+        self.opener = null;
+        self.open('','_self');
+        self.close();
+        window.close();
+        */
+        //window.open(",'_parent',");
+       Forbid();
+      }
+     
+  }
+  
+</script>
+</body>
